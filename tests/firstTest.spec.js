@@ -297,13 +297,7 @@ test.describe('Lesson 12.1, lesson practice', () => {
         // await page.getByRole('heading', {name: 'Hello World!'}).waitFor()
         await expect(page.getByRole('heading', {name: 'Hello World!'})).toBeVisible({timeout: 6000});
     });
-    test(' test using alternative timeouts', async ({page}) => {
-        await page.goto('https://the-internet.herokuapp.com/dynamic_loading');
-        await page.getByText('Example 1').click();
-        await page.getByRole('button', {name: 'Start'}).click();
-        // await page.getByRole('heading', {name: 'Hello World!'}).waitFor()
-        await expect(page.getByRole('heading', {name: 'Hello World!'})).toBeVisible({timeout: 6000});
-    })
+
 
 });
 
